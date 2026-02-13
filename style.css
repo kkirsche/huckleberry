@@ -39,9 +39,8 @@ main {
   margin-inline: auto;
 }
 
-.intro-chunk,
-.card {
-  padding-inline: 24px;
+.intro-chunk {
+  max-width: 415px;
 }
 
 h1 {
@@ -52,35 +51,41 @@ h2 {
   font-size: 1.5rem;
 }
 
-.card {
-  background-color: var(--white);
-  border-bottom: 8px solid var(--light);
-  padding-block: 8px;
-  margin-block: 48px;
-}
-
-.title {
-  padding-block-start: 96px;
-  padding-block-end: 48px;
-}
-
-.indented-heading {
-  margin-inline-start: -32px;
-  background-color: var(--secondary-light);
-  border-bottom: 8px solid var(--secondary-dark);
-  padding-inline-start: 24px;
-  padding-block: 16px;
-}
-
 p {
-  padding-block-start: 16px;
+  margin-block-end: 1rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+p:last-child {
+  margin-block-end: 0;
 }
 
 strong {
   color: var(--primary);
 }
 
-strong:first-of-type::before {
-  content: "";
-  display: block;
+.card {
+  background-color: var(--white);
+  border-bottom: 8px solid var(--light);
+
+  padding-block: 8px;
+  margin-block: 48px;
+
+  padding-inline: 24px;
+}
+
+.title {
+  padding-block-start: 96px;
+  padding-block-end: 64px;
+
+  font-size: 2rem;
+}
+
+.indented-heading {
+  margin-inline-start: -32px;
+  background-color: var(--secondary-light);
+  border-bottom: 8px solid var(--secondary-dark);
+  padding-inline-start: 32px;
+  padding-block: 16px;
 }
